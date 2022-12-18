@@ -57,7 +57,7 @@ if (specChar == [true]) {
 for (var i = 0; i< length; i++){
   password = password + [Math.floor(Math.random() * length)];
   console.log(password);
-  return password;
+ 
 
 
 
