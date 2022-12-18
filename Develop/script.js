@@ -17,7 +17,7 @@ function generatePassword() {
   console.log(length);
   if (length < 8 || length > 128) {
     // alert("Your password must be between 8 and 128 characters!");
-    return "Your length should be between 8 and 128";
+    return "Your length should be between 8 and 128 characters!";
   }
 
 
