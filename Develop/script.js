@@ -1,12 +1,15 @@
 // Assignment code here
 
 // Variables
+var generatepassword = "password";
  var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
  var lowerCase = "abcdefghijklmnopqrstuvwxyz";
  var Numerical = "0123456789";
  var specialChars = "!\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
- var passWord = "";
-console.log(upperCase + lowerCase + Numerical + specialChars.length);
+ var password = "";
+console.log(upperCase.length + lowerCase.length + Numerical.length + specialChars.length);
+
+
 // Prompt for password length
 function generatePassword () {
 
@@ -18,21 +21,37 @@ function generatePassword () {
   return(generatePassword);
 
 }
-
-var upCase = window.confirm("Would you like Upper case letters?");
-console.log(upCase);
-if (upCase == [true]){
-  for (var i = 0; i < upperCase.length; i++)
-  passWord.push(upperCase[i]);
-}
-var lowCase = window.confirm("Would you like lowers case letters?");
-console.log(lowCase);
-if(lowCase == [true]) {
-  for (var i = 0; i <lowerCase.length; i++)
-  passWord.push(lowerCase[i]);
-}
-var Numbers = window.prompt("would you like to add numbers");
-
+  // Add Uppercase letters
+  var upCase = window.confirm("Would you like Upper case letters?");
+  console.log(upCase);
+  if (upCase == [true]){
+    for (var i = 0; i < upperCase.length; i++)
+    password.push(upperCase[i]);
+  }
+  // Add lower case letters
+  var lowCase = window.confirm("Would you like lowers case letters?");
+  console.log(lowCase);
+  if(lowCase == [true]) {
+    for (var i = 0; i <lowerCase.length; i++)
+    password.push(lowerCase[i]);
+  }
+  // Add numbers 
+  var Numbers = window.confirm("would you like to add numbers");
+  console.log(Numbers);
+  if (Numbers == [true]) {
+    for (var i = 0; i <Numerical.length; i++)
+    password.push(Numerical[i]);
+  }
+  // Add special characters 
+  var specChar = window.confirm("Would you like special characters");
+  console.log(specChar);
+  if (specChar == [true]) {
+    for (var i = 0; i <specialChars.length; i++)
+    password.push(specialChars[i]);
+  }
+  for (var i = 0; i< length; i++){
+password = password + [Math.floor(Math.random() * length)];
+  }
 
 
 
