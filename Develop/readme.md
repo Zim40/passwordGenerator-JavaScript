@@ -27,4 +27,4 @@ MIT licence.
 ## Links
 Github: https://github.com/Zim40/passwordGenerator-JavaScript
 
-!["Password Generator"](./JS%20screenshot.png) )
+!["Password Generator"](./Images/JS%20screenshot.png) 
